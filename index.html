@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Database App</h1>
+        <nav>
+            <ul>
+                <li><a href="#latest">Lançamentos</a></li>
+                <li><a href="#watchlist">Minha Lista</a></li>
+                <li><a href="#reviews">Avaliações</a></li>
+            </ul>
+            <button id="theme-toggle" style="margin-left:20px;padding:6px 14px;background:#ffcc00;color:#222;border:none;border-radius:4px;font-weight:bold;cursor:pointer;">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+    <main>
+        <section id="filters" style="margin-bottom:30px;">
+            <h2>Buscar Filmes</h2>
+            <form id="filter-form" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
+                <input type="text" id="filter-name" placeholder="Nome do filme" style="flex:1;min-width:120px;">
+                <input type="number" id="filter-year" placeholder="Ano" min="1900" max="2100" style="width:90px;">
+                <select id="filter-genre" style="min-width:120px;"><option value="">Gênero</option></select>
+                <input type="text" id="filter-actor" placeholder="Ator/Atriz" style="flex:1;min-width:120px;">
+                <input type="text" id="filter-director" placeholder="Diretor/Diretora" style="flex:1;min-width:120px;">
+                <button type="submit" style="padding:6px 14px;background:#ffcc00;color:#222;border:none;border-radius:4px;font-weight:bold;cursor:pointer;">Buscar</button>
+            </form>
+        </section>
+        <section id="latest">
+            <h2>Lançamentos Recentes</h2>
+            <div class="movies-grid">
+                <!-- Os filmes mais recentes serão exibidos automaticamente aqui -->
+            </div>
+        </section>
+        <section id="watchlist">
+            <h2>Minha Lista</h2>
+            <p>Crie sua própria lista de filmes para assistir.</p>
+        </section>
+        <section id="reviews">
+            <h2>Avaliações</h2>
+            <p>Veja e escreva avaliações sobre os filmes.</p>
+        </section>
+    </main>
+    <footer>
+    <p>&copy; 2025 Movie Database App. Projeto sem fins lucrativos desenvolvido por Falcon apenas para estudo de JavaScript.</p>
+    </footer>
+</body>
+</html>
+</body>
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
